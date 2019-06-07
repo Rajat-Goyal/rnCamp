@@ -35,9 +35,12 @@ export default class App extends Component<Props> {
     if(this.state.placeName.trim() !== '')
     {
       list.push(this.state.placeName)
-      this.setState({
-        placeList:list
+      this.setState(prevState=>{
+        return({
+        placeList:[...prevState.placeList,this.state.placeName]
+      
       })
+    })
     }
   
     this.setState({placeName:""})
