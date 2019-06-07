@@ -39,10 +39,13 @@ export default class App extends Component {
   };
 
   submit = () =>{
+      //alert(this.state.placeName)
       //array = [...this.state.list,this.state.placeName]
       this.setState({
+        return(
         list: [...this.state.list,this.state.placeName],
         placeName: ""
+        );
       })
   }
   render() {
@@ -61,7 +64,9 @@ export default class App extends Component {
         <View style={styles.containerText}>
           {
             this.state.list.map((value,index)=>{
+              return(
               <Text>{value}</Text>
+              )
             })
           }
         </View>
