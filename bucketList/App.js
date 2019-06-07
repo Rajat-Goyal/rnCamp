@@ -15,20 +15,50 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
-type Props = {};
-export default class App extends Component<Props> {
+/////////////////////////////////////////////////////////////
+class UselessTextInput extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <TextInput
+        {...this.props} // Inherit any props passed to it; e.g., multiline, numberOfLines below
+        editable = {true}
+        maxLength = {40}
+      />
     );
   }
 }
 
+export default class UselessTextInputMultiline extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: '',
+    };
+    onChangeInput=(val)=>
+    {
+      if(this.state.pl)
+      this.setState(prevState =>{
+        return ({
+          placeName:val.toLower
+        })
+      }
+    }
+  }
+
+  // If you type something in the text box that is a color, the background will change to that
+  // color.
+  render() {
+    return (
+     <View style={{ styles.container}}>
+       <TextInput value={this.state.placeName} onChangeText
+     </View>
+    );
+  }
+}
+
+
+
+///////////////////////////////////////////////////////
 const styles = StyleSheet.create({
   container: {
     flex: 1,
