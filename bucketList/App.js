@@ -7,14 +7,7 @@
  */
 
 import React, { Component } from "react";
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  Button
-} from "react-native";
+import { Platform, StyleSheet, View, TextInput, Button, Text } from "react-native";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -26,7 +19,7 @@ const instructions = Platform.select({
 export default class App extends Component {
   state = {
     placeName: "",
-    list: []
+    placeList: []
   };
   onChangInput = val => {
     // if(this.state.placeName.trim() === '')
@@ -38,20 +31,21 @@ export default class App extends Component {
     });
   };
 
-  submit = () =>{
-      //alert(this.state.placeName)
-      //array = [...this.state.list,this.state.placeName]
-      this.setState({
-        return(
-        list: [...this.state.list,this.state.placeName],
-        placeName: ""
-        );
-      })
-  }
+  placeAddHandler = () => {
+    //if (this.state.placeName.trim() === "" ) return;
+
+    this.setState(prevState => {
+      return {
+        placeList: prevState.placeList.concat(this.state.placeName)
+      };
+    });
+
+    
+  };
   render() {
     return (
-      <View style={styles.containerText}>
-        <View style={styles.container}>
+      <View style={styles.container}>
+        <View style={styles.inputContainer}>
           <TextInput
             value={this.state.placeName}
             onChangeText={val => this.onChangInput(val)}
@@ -59,28 +53,33 @@ export default class App extends Component {
             autoFocus={true}
             style={styles.placeInput}
           />
-          <Button onPress={this.submit} title={"Add"} />
+          <Button title={"Add"} onPress={this.placeAddHandler} />
         </View>
-        <View style={styles.containerText}>
-          {
-            this.state.list.map((value,index)=>{
-              return(
-              <Text>{value}</Text>
-              )
-            })
-          }
+        <View style={styles.placeListContainer} >
+          {this.state.placeList.map(place => {
+            return <Text>{place}</Text>
+          })}
         </View>
-        </View>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1
+  },
+  inputContainer: {
+    flex: 1,
+    justifyContent: "flex-start",
+    alignItems: "baseline",
+    flexDirection: "row",
+    width: "100%",
+    padding: 40
+  },
+  placeListContainer: {
     flex: 4,
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: 'row' 
+    backgroundColor: "grey"
   },
   containerText: {
     flex: 4,
@@ -106,6 +105,7 @@ const styles = StyleSheet.create({
   },
   placeInput: {
     borderBottomColor: "blue",
-    borderBottomWidth: 2
+    borderBottomWidth: 2,
+    width: "70%"
   }
 });
