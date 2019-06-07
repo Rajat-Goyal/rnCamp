@@ -14,6 +14,7 @@ import {
   View,
   TextInput,
   Button
+  
 } from "react-native";
 
 const instructions = Platform.select({
@@ -25,7 +26,8 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   state = {
-    placeName: ""
+    placeName: "",
+    list:[]
   };
   onChangInput = val => {
     // if(this.state.placeName.trim() === '')
@@ -36,9 +38,24 @@ export default class App extends Component {
       };
     });
   };
+
+  add = () =>{
+    if(this.state.placeName.trim()=="") return;
+
+    this.setState(prevState=>{
+      return{
+        list : [...prevState.list,this.state.placeName],
+        placeName: ""
+      };
+     
+    
+    })
+  }
+
   render() {
     return (
-        <View style={styles.container}>
+      <View style={styles.container}>
+            <View style={styles.container1}>
           <TextInput
             value={this.state.placeName}
             onChangeText={val => this.onChangInput(val)}
@@ -46,8 +63,21 @@ export default class App extends Component {
             autoFocus={true}
             style={styles.placeInput}
           />
-          <Button title={"Add"} />
-        </View>
+          <Button title={"Add"} onPress={this.add} />
+    </View>
+    <View style={styles.container2}>
+        {
+          this.state.list.map((value,index)=>{
+            return  <Text> {value} </Text>
+             
+            
+            
+        })
+      }
+
+    </View>
+      </View>
+    
     );
   }
 }
@@ -57,13 +87,22 @@ const styles = StyleSheet.create({
     flex: 4,
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: 'row' 
+    flexDirection: 'column' 
   },
   container1: {
     flex: 1,
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "green"
+   
+  },
+  container2: {
+    flex: 4,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    backgroundColor: "grey"
   },
   welcome: {
     fontSize: 20,
