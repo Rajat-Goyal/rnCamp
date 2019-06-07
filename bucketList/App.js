@@ -25,7 +25,8 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   state = {
-    placeName: ""
+    placeName: "",
+    list: []
   };
   onChangInput = val => {
     // if(this.state.placeName.trim() === '')
@@ -36,8 +37,17 @@ export default class App extends Component {
       };
     });
   };
+
+  submit = () =>{
+      //array = [...this.state.list,this.state.placeName]
+      this.setState({
+        list: [...this.state.list,this.state.placeName],
+        placeName: ""
+      })
+  }
   render() {
     return (
+      <View style={styles.containerText}>
         <View style={styles.container}>
           <TextInput
             value={this.state.placeName}
@@ -46,7 +56,15 @@ export default class App extends Component {
             autoFocus={true}
             style={styles.placeInput}
           />
-          <Button title={"Add"} />
+          <Button onPress={this.submit} title={"Add"} />
+        </View>
+        <View style={styles.containerText}>
+          {
+            this.state.list.map((value,index)=>{
+              <Text>{value}</Text>
+            })
+          }
+        </View>
         </View>
     );
   }
@@ -58,6 +76,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: 'row' 
+  },
+  containerText: {
+    flex: 4,
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: 'column' 
   },
   container1: {
     flex: 1,
