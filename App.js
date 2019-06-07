@@ -7,24 +7,75 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-type Props = {};
-export default class App extends Component<Props> {
+import {Platform, StyleSheet,Button,Text, TextInput, View} from 'react-native';
+import { arrayExpression } from '@babel/types';
+export default class App extends Component {
+ constructor() {
+   super()
+   this.state={
+    placeName:'',
+    arr:[]
+  }}
+  placeChange(val){
+    this.setState((prevState)=>{
+     return({
+       placeName: val.toLowerCase()
+      })
+    })
+  }
+  addItem(){
+   
+  }
   render() {
     return (
+      <View style={{flex:1}}>
       <View style={styles.container}>
-        <Text style={{fontSize:30}}>Bye new</Text>
+        <TextInput 
+        value={this.state.placeName} 
+        autoFocus={true}
+         placeholder={"I want to go to.."}
+         style={styles.placeInput}
+          onChangeText={(val)=>{this.placeChange(val)}}/>
+          <Button
+          title={"Add"}
+          onPress={()=>{
+            this.setState(prevState => ({
+              arr: [...prevState.arr, prevState.placeName]
+            }))
+          }}
+          />
+      </View>    
+      <View style={styles.listing}>
+      {this.state.arr.map((item)=>{
+        return <Text style={styles.listItem}>{item}</Text>;
+      })}
       </View>
-    );
+      </View>
+      );
   }
 }
 
 const styles = StyleSheet.create({
+  placeInput:{
+    borderBottomColor: "blue",
+    borderBottomWidth: 2,
+    width:"70%"
+  },
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'flex-start',
+    alignItems: 'baseline',
+    flexDirection: 'row'
+  },
+  listing:{
+    flex:4,
+    justifyContent: "flex-start",
+    flexDirection: 'column',
+  },
+  listItem:{
+    textAlign:"center",
+    justifyContent:"center",
+    padding:10
   },
   welcome: {
     fontSize: 20,
