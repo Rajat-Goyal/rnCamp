@@ -32,15 +32,17 @@ export default class App extends Component<Props> {
       placeName:val})
   })}
   onButtonPress=()=>{
-    if(this.state.placeName !== '')
+    if(this.state.placeName.trim() !== '')
     {
       list.push(this.state.placeName)
       this.setState({
         placeList:list
       })
-      this.state.placeName=""
     }
-  }
+  
+    this.setState({placeName:""})
+      
+    }
   render() {
     return (
       <View style={{flex:1}}>
