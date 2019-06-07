@@ -1,0 +1,211 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.59.9] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/f379c033ab117efdbd441b1728b3a6cd/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/48235d305a1d5e6cf21b88fdbd8ae62c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d564e8fb2f4329ba386e6422b21c0169/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/186575de71206a5d1d7d8a07ed9f6ab9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/21c4e2a23d99b14377fd67f77cbac999/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/0442ac69469f1f7dac196cfe6e95aa3c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/bec31d2885fda5b97f5d3dec8f080bb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2e2685b679aa39b3afe8f1e800347bd2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/89f68615a39ff0f55ffb921b94cfc3e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a7d60b9d51d747da474902182d498139/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/db34bba6df2ef8df352fcbe4347fde3a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6626a46cea6d6d5841469bc709db1fcc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/b161ecee1fbea475ff1438d2eea87bf3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/8df7d1f501899df4400cf754e6140595/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d6172849cba3af7d933f155ef942d23d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a08cb32f4aac25ccd328f331e807ec66/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6bb8cdb57b48e3cba1ea6aa9a176db77/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/56a5968528a76b652fad81c929f482f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac84609e10927651d36ad7bf31f27c1c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d559c2268b83c2fe307ad18781454a3a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ab489c364f37ad686a9a4d6e3a03cf7d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/c3cad720180b0618d42163d34017c9a8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/1fe313b7631861fc3f6ab63934b057a2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ea6e1aa30690f570bb385e9a8f9d5430/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d1cf360fdebe87e7096edd8bc571be61/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/285d51eb4fa085e2c9b46ece87fa300c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/71e179ec43d30054d419c84eccb8f6f3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/cbafb0a6d612e2b21c66690aed2ab827/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2ca9521ddb3a22fbcd572998be2ab891/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/886a56b0da638d60f81ecc42ed3c4437/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/38e17fd84fa38bce2daeeb79bcd78f8f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a9ab45e27895a7c5edffd71b79418dda/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/5209b0bdf37515ee60edb82a557a5458/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:2:3-27
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:2:3-27
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.59.9] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/f379c033ab117efdbd441b1728b3a6cd/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.9] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/f379c033ab117efdbd441b1728b3a6cd/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a08cb32f4aac25ccd328f331e807ec66/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a08cb32f4aac25ccd328f331e807ec66/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a9ab45e27895a7c5edffd71b79418dda/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a9ab45e27895a7c5edffd71b79418dda/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:8:7-39
+	tools:ignore
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:10:7-52
+	tools:targetApi
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:usesCleartextTraffic
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.bucketlist.MainActivity
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.59.9] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/f379c033ab117efdbd441b1728b3a6cd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.9] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/f379c033ab117efdbd441b1728b3a6cd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/48235d305a1d5e6cf21b88fdbd8ae62c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/48235d305a1d5e6cf21b88fdbd8ae62c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d564e8fb2f4329ba386e6422b21c0169/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d564e8fb2f4329ba386e6422b21c0169/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/186575de71206a5d1d7d8a07ed9f6ab9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/186575de71206a5d1d7d8a07ed9f6ab9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/21c4e2a23d99b14377fd67f77cbac999/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/21c4e2a23d99b14377fd67f77cbac999/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/0442ac69469f1f7dac196cfe6e95aa3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/0442ac69469f1f7dac196cfe6e95aa3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/bec31d2885fda5b97f5d3dec8f080bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/bec31d2885fda5b97f5d3dec8f080bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2e2685b679aa39b3afe8f1e800347bd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2e2685b679aa39b3afe8f1e800347bd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/89f68615a39ff0f55ffb921b94cfc3e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/89f68615a39ff0f55ffb921b94cfc3e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a7d60b9d51d747da474902182d498139/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a7d60b9d51d747da474902182d498139/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/db34bba6df2ef8df352fcbe4347fde3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/db34bba6df2ef8df352fcbe4347fde3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6626a46cea6d6d5841469bc709db1fcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6626a46cea6d6d5841469bc709db1fcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/b161ecee1fbea475ff1438d2eea87bf3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/b161ecee1fbea475ff1438d2eea87bf3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/8df7d1f501899df4400cf754e6140595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/8df7d1f501899df4400cf754e6140595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d6172849cba3af7d933f155ef942d23d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d6172849cba3af7d933f155ef942d23d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac5a5988fb7b82182c3f22f9de5cda82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a08cb32f4aac25ccd328f331e807ec66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a08cb32f4aac25ccd328f331e807ec66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6bb8cdb57b48e3cba1ea6aa9a176db77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/6bb8cdb57b48e3cba1ea6aa9a176db77/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/56a5968528a76b652fad81c929f482f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/56a5968528a76b652fad81c929f482f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac84609e10927651d36ad7bf31f27c1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ac84609e10927651d36ad7bf31f27c1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d559c2268b83c2fe307ad18781454a3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d559c2268b83c2fe307ad18781454a3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ab489c364f37ad686a9a4d6e3a03cf7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ab489c364f37ad686a9a4d6e3a03cf7d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/c3cad720180b0618d42163d34017c9a8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/c3cad720180b0618d42163d34017c9a8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/1fe313b7631861fc3f6ab63934b057a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/1fe313b7631861fc3f6ab63934b057a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ea6e1aa30690f570bb385e9a8f9d5430/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/ea6e1aa30690f570bb385e9a8f9d5430/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d1cf360fdebe87e7096edd8bc571be61/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/d1cf360fdebe87e7096edd8bc571be61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/285d51eb4fa085e2c9b46ece87fa300c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/285d51eb4fa085e2c9b46ece87fa300c/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/71e179ec43d30054d419c84eccb8f6f3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/71e179ec43d30054d419c84eccb8f6f3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/cbafb0a6d612e2b21c66690aed2ab827/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/cbafb0a6d612e2b21c66690aed2ab827/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2ca9521ddb3a22fbcd572998be2ab891/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/2ca9521ddb3a22fbcd572998be2ab891/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/886a56b0da638d60f81ecc42ed3c4437/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/886a56b0da638d60f81ecc42ed3c4437/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/38e17fd84fa38bce2daeeb79bcd78f8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/38e17fd84fa38bce2daeeb79bcd78f8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a9ab45e27895a7c5edffd71b79418dda/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/a9ab45e27895a7c5edffd71b79418dda/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/5209b0bdf37515ee60edb82a557a5458/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/kryptonite/.gradle/caches/transforms-2/files-2.1/5209b0bdf37515ee60edb82a557a5458/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/kryptonite/Documents/react-native/bucketList/android/app/src/debug/AndroidManifest.xml:5:22-75
