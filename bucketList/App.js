@@ -9,6 +9,7 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, View, TextInput, Button, Text } from "react-native";
 import List from "./components/List"
+import InputContainer from "./components/inputContainer";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -25,22 +26,17 @@ export default class App extends Component {
     placeList: [],
    url: 'https://images.all-free-download.com/images/graphicthumb/hd_picture_of_the_beautiful_natural_scenery_03_166249.jpg'
   };
-  onChangInput = val => {
-    // if(this.state.placeName.trim() === '')
-    //   return;
-    this.setState(prevState => {
-      return {
-        placeName: val.toLowerCase()
-      };
-    });
-  };
 
-  placeAddHandler = () => {
+
+  placeAddHandler = (x) => {
     //if (this.state.placeName.trim() === "" ) return;
 
     this.setState(prevState => {
       return {
-        placeList: prevState.placeList.concat(this.state.placeName),
+        placeList: prevState.placeList.concat({
+          placeName: x,
+          placeImage: null
+        }),
         placeName: ""
       };
     });
@@ -50,29 +46,9 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.inputContainer}>
-          <TextInput
-            value={this.state.placeName}
-            onChangeText={val => this.onChangInput(val)}
-            placeholder={"I want to go to this place .."}
-            autoFocus={true}
-            style={styles.placeInput}
-          />
-          <Button title={"Add"} onPress={this.placeAddHandler} />
-        </View>
-        <View style={styles.placeListContainer} >
-          {this.state.placeList.map((value,index) => {
-            return(
-              <List 
-              key={index} 
-              value={value}
-              url={this.state.url}
-              />
-            )
-           
-          })
-          }
-        </View>
+        <InputContainer onAdd={this.placeAddHandler} />
+        <ListContainer placeList={this.state.placeList} />
+       
       </View>
     );
   }
