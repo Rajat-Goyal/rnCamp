@@ -8,6 +8,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, View, TextInput, Button, Text } from "react-native";
+import List from "./components/List"
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -16,10 +17,13 @@ const instructions = Platform.select({
     "Shake or press menu button for dev menu"
 });
 
+
+
 export default class App extends Component {
   state = {
     placeName: "",
-    placeList: []
+    placeList: [],
+   url: 'https://images.all-free-download.com/images/graphicthumb/hd_picture_of_the_beautiful_natural_scenery_03_166249.jpg'
   };
   onChangInput = val => {
     // if(this.state.placeName.trim() === '')
@@ -36,7 +40,8 @@ export default class App extends Component {
 
     this.setState(prevState => {
       return {
-        placeList: prevState.placeList.concat(this.state.placeName)
+        placeList: prevState.placeList.concat(this.state.placeName),
+        placeName: ""
       };
     });
 
@@ -49,16 +54,24 @@ export default class App extends Component {
           <TextInput
             value={this.state.placeName}
             onChangeText={val => this.onChangInput(val)}
-            placeholder={"I want to go to .."}
+            placeholder={"I want to go to this place .."}
             autoFocus={true}
             style={styles.placeInput}
           />
           <Button title={"Add"} onPress={this.placeAddHandler} />
         </View>
         <View style={styles.placeListContainer} >
-          {this.state.placeList.map(place => {
-            return <Text>{place}</Text>
-          })}
+          {this.state.placeList.map((value,index) => {
+            return(
+              <List 
+              key={index} 
+              value={value}
+              url={this.state.url}
+              />
+            )
+           
+          })
+          }
         </View>
       </View>
     );
@@ -71,15 +84,16 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flex: 1,
-    justifyContent: "flex-start",
-    alignItems: "baseline",
+    justifyContent: "center",
+    alignItems: "center",
     flexDirection: "row",
     width: "100%",
-    padding: 40
+    //padding: 20
   },
   placeListContainer: {
-    flex: 4,
-    backgroundColor: "grey"
+    flex: 5,
+    alignItems: "center",
+    backgroundColor: "lightblue"
   },
   container1: {
     flex: 1,
