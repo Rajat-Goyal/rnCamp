@@ -1,11 +1,13 @@
 import React from 'react'
-import { Platform,View,Image, Text, StyleSheet } from 'react-native';
+import { Platform,View,Image, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native';
 export default function Listitem(props) {
     return (
+        <TouchableWithoutFeedback onPress={() => {props.changeState(props.name)}}>
         <View style={styles.cont}>
         <Image source={{uri:props.image}} style={{marginLeft:20,height:50,width:50}}/>
         <Text style={styles.listItem}>{props.name}</Text>
         </View>
+        </TouchableWithoutFeedback>
     )
 }
 

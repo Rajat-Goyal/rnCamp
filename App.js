@@ -33,8 +33,13 @@ export default class App extends Component {
       return;
     }
     this.setState(prevState => ({
-      arr: [...prevState.arr, placeName]
+      arr: [...prevState.arr,placeName]
     }))
+  }
+  changeState=(val)=>{
+    let newArr=this.state.arr;
+    newArr.splice(newArr.indexOf(val),1)
+    this.setState({arr:newArr})
   }
   render() {
     return (
@@ -43,6 +48,7 @@ export default class App extends Component {
           addItem={this.addItem}
         />
         <List places={this.state.arr}
+        changeState={this.changeState}
         image={rand()}/>
       </View>
     );

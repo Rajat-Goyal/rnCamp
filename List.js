@@ -1,19 +1,24 @@
-import React from 'react'
-import { Platform, StyleSheet, View } from 'react-native';
+import React,{Component} from 'react'
+import { Platform, StyleSheet, ScrollView,View } from 'react-native';
 import Listitem from './Listitem';
-export default function List(props) {
+export default class List extends Component{
+  constructor(props){
+    super(props);
+  }
+  render(){
     return (
-        <View style={styles.listing}>
-          {props.places.map((item) => {
-            return <Listitem name={item} image={props.image}/>;
+      <View style={{flex:7,justifyContent:"flex-start"}}>
+        <ScrollView style={styles.listing}>
+          {this.props.places.map((item) => {
+         return <Listitem name={item} image={this.props.image} changeState={this.props.changeState}/>;
           })}
+        </ScrollView>
         </View>
     )
+        }
 }
 const styles = StyleSheet.create({
 listing: {
-    flex: 7,
-    justifyContent: "flex-start",
     flexDirection: 'column',
   }
 })
