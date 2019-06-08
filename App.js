@@ -6,85 +6,45 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet,Button,Text, TextInput, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, View } from 'react-native';
 import { arrayExpression } from '@babel/types';
+import Inputting from './Inputting';
+import List from './List';
+const img=[
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg/1200px-City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg',
+  'https://images.unsplash.com/photo-1519794206461-cccd885bf209?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80',
+  'https://media.gettyimages.com/photos/downtown-manhattan-new-york-jersey-city-golden-hour-sunset-picture-id910867946?s=612x612'
+]
+function rand(){
+  return img[Math.floor(Math.random()*img.length)];
+}
 export default class App extends Component {
- constructor() {
-   super()
-   this.state={
-    placeName:'',
-    arr:[]
-  }}
-  placeChange(val){
-    this.setState((prevState)=>{
-     return({
-       placeName: val.toLowerCase()
-      })
-    })
+  constructor() {
+    super()
+    this.state = {
+      arr: []
+    }
   }
-  addItem(){
-   
+  
+  addItem = (placeName) => {
+    if (placeName.trim() === '') {
+      alert('Empty');
+      return;
+    }
+    this.setState(prevState => ({
+      arr: [...prevState.arr, placeName]
+    }))
   }
   render() {
     return (
-      <View style={{flex:1}}>
-      <View style={styles.container}>
-        <TextInput 
-        value={this.state.placeName} 
-        autoFocus={true}
-         placeholder={"I want to go to.."}
-         style={styles.placeInput}
-          onChangeText={(val)=>{this.placeChange(val)}}/>
-          <Button
-          title={"Add"}
-          onPress={()=>{
-            this.setState(prevState => ({
-              arr: [...prevState.arr, prevState.placeName]
-            }))
-          }}
-          />
-      </View>    
-      <View style={styles.listing}>
-      {this.state.arr.map((item)=>{
-        return <Text style={styles.listItem}>{item}</Text>;
-      })}
+      <View style={{ flex: 1 }}>
+        <Inputting
+          addItem={this.addItem}
+        />
+        <List places={this.state.arr}
+        image={rand()}/>
       </View>
-      </View>
-      );
+    );
   }
 }
-
-const styles = StyleSheet.create({
-  placeInput:{
-    borderBottomColor: "blue",
-    borderBottomWidth: 2,
-    width:"70%"
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'baseline',
-    flexDirection: 'row'
-  },
-  listing:{
-    flex:4,
-    justifyContent: "flex-start",
-    flexDirection: 'column',
-  },
-  listItem:{
-    textAlign:"center",
-    justifyContent:"center",
-    padding:10
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
