@@ -5,10 +5,46 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/start"
+=======
+            "name": "Debug Android",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "android",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
+        },
+        {
+            "name": "Debug iOS",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "ios",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
+        },
+        {
+            "name": "Attach to packager",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "attach",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
+        },
+        {
+            "name": "Debug in Exponent",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "exponent",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
+>>>>>>> 3bd378bff20b0e8240b2c376b7ccaa2fa992261c
         }
     ]
 }
