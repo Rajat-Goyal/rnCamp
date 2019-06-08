@@ -11,14 +11,13 @@ export default class Inputting extends Component {
 }
 placeChange(val) {
   let len=val.length;
-  alert(val)
   col="blue"
   if(len>=5)col="green"
   if(len>=10)col="yellow"
   if(len===15)col="red"
-    setInterval(function(){this.setState({
+    this.setState({
       placeName: val.toLowerCase(),
-    })},3000);
+    })
   }
     render() {
         return (
