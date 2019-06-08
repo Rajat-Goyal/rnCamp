@@ -4,6 +4,7 @@
  *
  * @format
  * @flow
+ * 
  */
 
 import React, { Component } from "react";
@@ -29,7 +30,7 @@ export default class App extends Component {
     this.setState(prevState => {
       return {
         placeName: val.toLowerCase()
-        
+
       };
     });
   };
@@ -40,11 +41,11 @@ export default class App extends Component {
     this.setState(prevState => {
       return {
         placeList: prevState.placeList.concat(this.state.placeName),
-        placeName : ''
+        placeName: ''
       };
     });
 
-    
+
   };
   render() {
     return (
@@ -63,15 +64,15 @@ export default class App extends Component {
 
           {
 
-            this.state.placeList.map((value,index)=>{
-              return(
-              <List key={index}
-              value={value}
-              index={index}
-              url={this.state.url}/>
+            this.state.placeList.map((value, index) => {
+              return (
+                <List key={index}
+                  value={value}
+                  index={index}
+                  url={this.state.url} />
               )
             })
-            
+
           }
         </View>
       </View>
@@ -87,10 +88,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "baseline",
-   // alignItems: 'center',
+    // alignItems: 'center',
     flexDirection: "row",
     width: "100%",
-    
     padding: 30
   },
   placeListContainer: {
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     flex: 4,
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: 'column' 
+    flexDirection: 'column'
   },
 
   textStyle: {
