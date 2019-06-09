@@ -25,7 +25,7 @@ export default class App extends Component {
     placeList: []
   };
 
-  placeAddHandler = ( x ) => {
+  placeAddHandler = (x) => {
     this.setState(prevState => {
       return {
         placeList: prevState.placeList.concat({
@@ -33,14 +33,17 @@ export default class App extends Component {
           placeImage: null
         })
       };
-    }, () => {x="RAJAT"});
-    
+    }, () => { x = "RAJAT" });
+
   };
+
+
+
   render() {
     return (
       <View style={styles.container}>
         <InputContainer onAdd={this.placeAddHandler} />
-        <ListContainer placeList={this.state.placeList} /> 
+        <ListContainer placeList={this.state.placeList} />
       </View>
     );
   }

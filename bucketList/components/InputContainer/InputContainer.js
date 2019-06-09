@@ -24,6 +24,12 @@ class InputContainer extends Component {
     })
   }
 
+  resetText = () =>{
+    this.setState({
+      placeName:""
+    })
+  } 
+
   render() {
     return (
       <View style={styles.inputContainer}>
