@@ -19,6 +19,7 @@ import {
 import ListItem from "./components/ListItem";
 import ListContainer from "./components/ListContainer"
 import InputContainer from "./components/InputContainer";
+import Reset from './components/ResetButton/ResetButton';
 
 export default class App extends Component {
   state = {
@@ -36,14 +37,17 @@ export default class App extends Component {
     }, () => { x = "RAJAT" });
 
   };
-
+  resetHandler = () =>{
+    this.refs.child.resetText();
+  }
 
 
   render() {
     return (
       <View style={styles.container}>
-        <InputContainer onAdd={this.placeAddHandler} />
+        <InputContainer ref="child" onAdd={this.placeAddHandler} />
         <ListContainer placeList={this.state.placeList} />
+        <Reset resetHandler={this.resetHandler}/>
       </View>
     );
   }

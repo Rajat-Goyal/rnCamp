@@ -20,7 +20,7 @@ class InputContainer extends Component {
   wrapperFunc = () => {
     this.props.onAdd(this.state.placeName);
     this.setState({
-        placeName: "" 
+      placeName: ""
     })
   }
 
@@ -28,7 +28,8 @@ class InputContainer extends Component {
     this.setState({
       placeName:""
     })
-  } 
+  };
+
 
   render() {
     return (
