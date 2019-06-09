@@ -31,7 +31,7 @@ export default class App extends Component {
   }
   changeState=(val)=>{
     let newArr=this.state.arr;
-    newArr.splice(newArr.indexOf(val),1)
+    newArr.splice(val,1)
     this.setState({arr:newArr})
   }
   render() {

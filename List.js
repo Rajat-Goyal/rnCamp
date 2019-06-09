@@ -17,8 +17,8 @@ export default class List extends Component{
     return (
       <View style={{flex:7,justifyContent:"flex-start"}}>
         <ScrollView style={styles.listing}>
-          {this.props.places.map((item) => {
-         return <Listitem name={item} image={rand()} changeState={this.props.changeState}/>;
+          {this.props.places.map((item,index) => {
+         return <Listitem name={item} image={rand()} index={index} changeState={this.props.changeState}/>;
           })}
         </ScrollView>
         </View>
