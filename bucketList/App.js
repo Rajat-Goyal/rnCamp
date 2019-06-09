@@ -8,8 +8,8 @@ import {
   TextInput,
   Button
 } from "react-native";
-import {AddToList} from './AddToList'
-import {DisplayList} from './DisplayList'
+import AddToList from './AddToList'
+import DisplayList from './DisplayList'
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -28,6 +28,8 @@ export default class App extends Component {
   onChangeInput = (val) => {
     // if(this.state.placeName.trim() === '')
     //   return;
+    //console.log("vishal")
+    //alert(val);
     this.setState(prevState => {
       return {
         placeName: val.toLowerCase()
@@ -37,9 +39,10 @@ export default class App extends Component {
 
   placeAddHandler= () =>{
         this.setState(prevState=>{
+          console.log("asd")
           return {
             placeList : prevState.placeList.concat(this.state.placeName),
-            //placeName: ''
+            placeName: ''
           }
 
           
@@ -52,35 +55,34 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
            <AddToList 
-           val={this.state.placeName}
-           inputDisplay={()=>onChangeInput}
-           addToList={()=>placeAddHandler}
+            val={this.state.placeName}
+            inputDisplay={this.onChangeInput}
+
+            placeAddHandler={this.placeAddHandler} 
            />
-          <DisplayList list={this.state.placeList}/>
-      {/*
+           <DisplayList list={this.state.placeList}/>  
+        
       </View>
-        <View style={styles.container}>
-           <View style={styles.container1}>
-          <TextInput
-            value={this.state.placeName}
-            onChangeText={val => this.onChangInput(val)}
+        // <View style={styles.container}>
+        //    <View style={styles.container1}>
+        //   <TextInput
+        //     value={this.state.placeName}
+        //     onChangeText={val => this.onChangInput(val)}
             
-            style={styles.placeInput}
-          />
-          <Button title={"Add"} onPress={this.placeAddHandler}/>
-          </View>
-          <View style={styles.container2}>
-              {this.state.placeList.map(item=>{
-                return (
-                <Text>{item}
-                </Text>
-              )
+        //     style={styles.placeInput}
+        //   />
+        //   <Button title={"Add"} onPress={this.placeAddHandler}/>
+        //   </View>
+        //   <View style={styles.container2}>
+        //       {this.state.placeList.map(item=>{
+        //         return (
+        //         <Text>{item}
+        //         </Text>
+        //       )
                
-            })}
-               
-          </View>  */}
-          
-        </View>
+        //     })}
+        //        />
+        //   </View>  
     )
   }
 }

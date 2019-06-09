@@ -1,33 +1,32 @@
 import React, {Component} from 'react'
 import {TextInput,View , StyleSheet,Button} from 'react-native'
+//import console = require('console');
+//import console = require('console');
 
 
 
 
-export function AddToList(props) {
-    // onChangInput = val => {
-        
-    //     value=val
-    //     // if(this.state.placeName.trim() === '')
-    //     //   return;
-    //     // this.setState(prevState => {
-    //     //   return {
-    //     //     placeName:props.value.toLowerCase()
-    //     //   };
-    //     // });
-    //   };
+export default function AddToList(props) {
+
+
+
+   
+     
     
     return (
-        <View style={styles.container}>
-            <TextInput
-            value={props.val}
-            onChangeText={props.onChangeInput(this.value)}
-            placeholder={"I want to go to .."}
-            autoFocus={true}
+            
+         <View style={styles.container}>
+             
+             <TextInput
+            
+             value={props.val}
+             onChangeText={ref=>props.inputDisplay(ref)}
+             placeholder={"I want to go to .."}
+             autoFocus={true}
             
             
-            />
-            <Button title={"Add"} onPress={props.placeAddHandler}/>
+             />
+             <Button title={"Add"} onPress={props.placeAddHandler}/>
         </View>
     )
 }

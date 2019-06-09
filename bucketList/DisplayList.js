@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
-import {TextInput,View , StyleSheet} from 'react-native'
+import {TextInput,Text,View , StyleSheet} from 'react-native'
 
-export function DisplayList(props) {
+export default function DisplayList(props) {
     return (
         <View style={styles.container}>
-             {props.list.map(item=>{
+              {props.list.map(item=>{
                 return (
                 <Text>{item}
                 </Text>
               )
                
-            })} 
+            })}  
         </View>
     )
 }
