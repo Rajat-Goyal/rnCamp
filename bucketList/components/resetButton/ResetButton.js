@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Button } from "react-base";
+import { View, Button } from "react-native";
 // import { tsPropertySignature } from "@babel/types";
 
 
@@ -7,9 +7,8 @@ export default ResetButton = (props) => {
 
     return (
         <View>
-            <button onPress={props.resetfunc}>
-                RESET INPUT
-            </button>
+            <Button title={"RESET"} onPress={props.resetfunc}>
+            </Button>
         </View>
     )
 

@@ -13,6 +13,7 @@ export default ListContainer = (props) => {
                 key={idx}
                 placeName={place.placeName}
                 placeImage={place.placeImage}
+               // {...props}
               />
             );
           })}

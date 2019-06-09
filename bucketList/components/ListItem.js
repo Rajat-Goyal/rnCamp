@@ -3,7 +3,7 @@ import {View, Image, StyleSheet, Text} from 'react-native';
 
 export default ListItem = (props) => {
     return (
-        <View style={styles.itemContainer}>
+        <View  style={styles.itemContainer} >
             <Image source={props.placeImage} style={styles.placeImage}/>
             <Text style={styles.placeName}>{props.placeName}</Text>
         </View>

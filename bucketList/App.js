@@ -43,7 +43,9 @@ resetHandler=()=>{
  this.refs.child.resetText();
 }
 
+// deleteHandler=()=>{
 
+// }
 
   render() {
     return (
